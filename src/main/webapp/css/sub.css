@@ -1,0 +1,435 @@
+/* ������������������ */
+#twitter{
+	padding-top:15px;
+	position:relative;
+}
+#twitter:before{
+	content:"";
+	width:10px;
+	height:90%;
+	position:absolute;
+	top:20px;
+	left:-35px;
+	border-radius:50%;
+	background: linear-gradient(to right, rgba(251,251,251,0.5) 0%,rgba(229,229,229,0.7) 100%); 
+}
+#twitter h1{
+	font-size: 14px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+#twitter h1:before{
+	font-family:webcafeIcon;
+	content: "t";
+	color:#00acee;
+	font-size:24px;
+	position:relative;
+	top:5px;
+	margin-right:5px;
+}
+.twitterArticle{
+	margin:20px 0;
+}
+.twitterUserProfile{
+	width:45px;
+	height:45px;
+	margin-right:10px;
+}
+.twitterContent{
+	margin:10px 0;
+	line-height:1.4;
+}
+.twitterContent mark{
+	background-color:transparent;
+	font-weight:bold;
+}
+.twitterDate{
+	display:block;
+	text-align:right;
+	color:#787878;
+}
+/* ������������ ������������������ ��������� */
+#contents{
+	position:relative;
+}
+.location {
+	position: absolute;
+	top: 18px;
+	right: 30px;
+}
+.location strong {
+	color: #0f5132;
+}
+#contents > h1{
+	font-size:18px;
+	font-family:nanumEX;
+	color: #0f5132;
+	text-shadow:1px 1px 0px rgba(0,0,0,0.2);
+	border-bottom: 2px solid #0f5132;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom:20px;
+}
+
+/* HTML5 ������������ */
+.html5Intro > h2{
+	font-size:16px;
+	color:#1698a7;
+	margin:20px 0;
+}
+.html5Intro > h2:before{
+	font-family:webcafeIcon;
+	content:"b";
+	font-size:20px;
+	color:#9cd3da;
+	position:relative;
+	top:5px;
+}
+.html5Intro p{
+	margin:20px;
+	line-height:1.6;
+}
+.html5Intro .location{
+	margin:0;
+}
+#videoPlayer{
+	position:relative;
+	width:530px;
+	height:310px;
+	margin:0 auto;
+	border:1px solid #db7506;
+	border-radius:5px;
+	background-image: linear-gradient(to bottom, #f9c251 0%,#f47f01 100%);
+}
+#videoPlayer video{
+	margin:10px;
+	width:300px;
+	border:1px solid #db7506;
+	border-radius:5px;
+}
+.videoCaption{
+	position:absolute;
+	top:10px;
+	right:10px;
+	width:200px;
+	height:290px;
+	overflow-y:auto;
+	background-color:#fff;
+	border:1px solid #db7506;
+	border-radius:5px;
+}
+.videoController{
+	margin:0 0 0 10px;
+	width:300px;
+	height:40px;
+	background:url(images/webcafe_video_logo.png) no-repeat 0 0;
+	background-size:40px 40px;
+	padding:5px 0 0 70px;
+}
+.btnPlay{
+	vertical-align:top;
+	width:0;
+	height:0;
+	padding:0;
+	overflow:hidden;
+	border-width:15px 25px;
+	border-style:solid;
+	border-color: transparent transparent transparent #fff;
+	background-color:transparent;
+}
+.btnPause{
+	vertical-align:top;	
+	width:0;
+	height:0;	
+	overflow:hidden;
+	padding:30px 0 0 5px;
+	border-width:0 10px 0 10px;
+	border-color:transparent #fff;
+	border-style:none solid;
+	background-color:transparent;
+	margin-right:25px;
+}
+.btnStop{
+	vertical-align:absmiddle;
+	width:15px;
+	height:0;
+	padding:15px 0 0 0;
+	overflow:hidden;
+	border:0;
+	background:#fff;
+}
+.playTime{
+	vertical-align:top;
+	color:#fff;
+	margin:0 15px 0 60px;
+	line-height:40px;
+}
+.btnVolumeOn{
+	border:0;
+	width:25px;
+	height:0;
+	padding:25px 0 0 0;
+	overflow:hidden;
+	background:transparent url(images/volume_on.png) no-repeat 0 0;
+	background-size:100% 100%;
+	position:relative;
+	top:5px;
+}
+.btnVolumeOff{
+	border:0;
+	width:25px;
+	height:0;
+	padding:25px 0 0 0;
+	overflow:hidden;
+	background:transparent url(images/volume_off.png) no-repeat 0 0;
+	background-size:100% 100%;
+	position:relative;
+	top:5px;
+}
+.html5Intro li{
+	margin:10px 20px;
+}
+.html5Intro li:before{
+	font-family:webcafeIcon;
+	content:"c";
+	position:relative;
+	top:2px;
+	margin-right:5px;
+}
+/* ��������������� ��������������� */
+.gallery ul{
+	overflow:hidden;
+	margin-top:30px
+}
+.gallery li{
+	float :left;
+	width:135px;
+	margin:0 10px 30px;
+	text-align:center;
+}
+.gallery figure{
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom:10px;
+}
+.gallery img{
+    border: 1px solid #ccc;
+}
+/* ������������������ */
+.paging {
+	margin-top: 20px;
+	text-align: center;
+}
+.btnPrev, .btnNext{
+	display:inline-block;
+	vertical-align:middle;
+	width:21px;
+	height:20px;
+	padding:0;
+	white-space:nowrap;
+	text-indent:20px;
+	overflow:hidden;
+	background:url(images/backpage_forwardpage.png) no-repeat;
+}
+.btnPrev{
+	background-position:0 0;
+}
+.btnNext{
+
+	background-position:100% 0;
+}
+.paging a,  .paging strong{
+	margin:0 5px;
+	line-height:20px;
+}
+.paging strong{
+	border-bottom:1px solid #ff3c00;
+	color:#ff3c00;
+}
+/* ��������� ������������������ */
+.allPost{
+	text-align:right;
+	margin:35px 0 10px;
+}
+.allPost:before{
+	font-family:webcafeIcon;
+	content: "d";
+	font-size:18px;
+	margin-right:3px;
+	position:relative;
+	top:6px;
+}
+.boardTable{
+	width:100%;
+}
+.bbsNumber{
+	width:15%;
+}
+.bbsTitle{
+	width:50%;
+}
+.bbsDate{
+	width:20%;
+}
+.bbsHit{
+	width:15%;
+}
+.boardTable th {
+	background-color: #5dc1ca;
+	color: #fff;
+}
+.boardTable th:first-child {
+	border-top-left-radius: 10px;
+}
+.boardTable th:last-child {
+	border-top-right-radius: 10px;
+}
+.boardTable th, .boardTable td {
+	padding: 10px 0;
+	text-align: center;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.boardTable td {
+	border-bottom:1px solid #ccc;
+}
+.boardTable td:nth-child(2) {
+	text-align: left;
+}
+.boardTable a{
+	display:inline-block;
+	width:90%;
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.boardTable span{
+	margin-left:5px;
+	color:#f48002;
+}
+/* ������������������������ */
+.formSign{
+	margin:30px 0 10px;
+	text-align:right;
+}
+.require{
+	display:inline-block;
+	width:10px;
+	height:12px;
+	text-indent:10px;
+	white-space:nowrap;	
+	overflow:hidden;
+}
+.require:before{
+	font-family:webcafeIcon;
+	content:"s";
+	color:#f48002;
+	position:relative;
+	left:-10px;
+}
+#joinForm{
+	border-top: 2px solid #ccc;
+	font-size:12px;
+}
+#joinForm p{
+	position:relative;
+	border-bottom: 1px solid #ccc;
+	overflow:hidden;
+}
+#joinForm label, .mailing em{
+	float:left;
+	width: 120px;
+	padding:13px 20px;
+	margin-right:10px;
+	font-weight:bold;
+/*	color:#666;*/
+	font-size:13px;
+	color:black;
+	/*background: #fffcef;*/
+	background:#cfe2ff;
+	
+}
+#joinForm input{
+	margin:10px 0;
+}
+#joinForm input:not([type="radio"]){
+	border:1px solid #aaa;
+	height:18px;
+	padding-left:5px;
+}
+input#address{
+	display:block;
+	margin:0;
+}
+.labelAddress{
+	height:50px;
+	line-height:50px;
+}
+.mailing em{
+	font-style:normal;
+	height:35px;
+	line-height:35px;
+}
+.mailing span{
+	display:block;
+	margin:10px 0;
+}
+#joinForm .mailing label{
+	background:none;
+	width:auto;
+	padding:0;
+	float:none;
+}
+#joinForm input[type="radio"]{
+	margin:0;
+}
+a.idCheck, a.findZipcode{
+	font-family:nanumEx;
+	font-size:11px;
+	color:#fff;
+	padding:3px 15px;
+	margin-left:5px;
+	border-radius:20px;
+	text-shadow:1px 1px 1px #ed676c, -1px -1px 1px #ed676c; 
+	background:#fe8389;
+}
+.findZipcode{
+	position:absolute;
+	left:260px;
+	top:12px;
+}
+.btnJoinArea{
+	margin:15px 0;
+	text-align:center;
+}
+.btnJoinArea button{
+	font-family:nanumEx;
+	font-size:14px;
+	color:#fff;
+	padding:8px 20px;
+	margin:0 5px;
+	border:0;
+	border-radius:3px;
+	letter-spacing:1px;	
+}
+.btnOk{
+	background: linear-gradient(to bottom, rgba(98,98,98,1) 0%,rgba(98,98,98,1) 50%,rgba(81,81,81,1) 51%,rgba(81,81,81,1) 100%,rgba(0,0,0,1) 100%,rgba(255,255,255,1) 100%);
+}
+.btncreate{
+	background: linear-gradient(to bottom, rgba(98,98,98,1) 0%,rgba(98,98,98,1) 50%,rgba(81,81,81,1) 51%,rgba(81,81,81,1) 100%,rgba(0,0,0,1) 100%,rgba(255,255,255,1) 100%);
+}
+.btnOk:before{
+	font-family: webcafeIcon;
+	content:"h";
+	font-size:24px;
+	line-height:0;
+	position:relative;
+	top:7px;
+	left:-5px;
+}
+.btnCancel{
+	background: linear-gradient(to bottom, rgba(145,145,145,1) 0%,rgba(145,145,145,1) 50%,rgba(130,130,130,1) 51%,rgba(81,81,81,1) 100%,rgba(0,0,0,1) 100%,rgba(130,130,130,1) 100%);
+}
